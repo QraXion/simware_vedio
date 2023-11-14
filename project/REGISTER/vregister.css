@@ -1,0 +1,47 @@
+#wrp {
+  width: 1260px;
+  height: 600px;
+  background-color: aquamarine;
+  margin: auto;
+}
+
+
+
+#wrp #header {
+  width: 1260px;
+  height: 80px;
+  background-color: antiquewhite;
+}
+
+#wrp #header #hleft a {
+  width: 275px;
+  height: 80px;
+  background-color: rgb(43, 255, 0);
+  float: left;
+  background-image: url("../images/SW.png");
+}
+
+#wrp #header #hright{
+width: 985px;
+height: 80px;
+background-color: rgb(255, 255, 255);
+float: right;
+
+}
+
+#wrp #register{
+  width: 1260px;
+  height: 260px;
+  background-color: rgb(255, 255, 255) ;
+  text-align: center;
+  display: block;
+  padding-top: 25px;
+}
+
+#wrp #menu {
+  width: 1260px;
+  height: 300px;
+  background-color: aqua;
+  background-image: url("../images/LEARN.png");
+}
+

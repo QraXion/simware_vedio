@@ -1,0 +1,204 @@
+#wrp {
+  width: 1260px;
+  height: 600px;
+  background-color: aquamarine;
+  margin: auto;
+}
+
+#wrp #header {
+  width: 1260px;
+  height: 80px;
+  background-color: antiquewhite;
+}
+
+#wrp #header #hleft a {
+width: 275px;
+height: 80px;
+background-color: rgb(43, 255, 0);
+float: left;
+background-image: url(../images/SW.png);
+}
+
+#wrp #header #hright{
+width: 985px;
+height: 80px;
+background-color: rgb(255, 255, 255);
+float: right;
+text-align: right;
+}
+
+#wrp #header #hright a:link,#wrp #header #hright a:visited{
+  width: 70px;
+  height: 25px;
+  background-color: rgb(255, 255, 255);
+  float: right;
+  font-size: large;
+  font-weight: bolder;
+  background-color: white;
+  color: gray;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+#wrp #header #hright a:hover{
+  background-color: gray;
+  color: rgb(255, 255, 255);
+}
+
+#wrp #menu{
+  width: 1260px;
+  height: 300px;
+  background-color: aqua;
+  background-image: url(../images/LEARN.png);
+}
+
+#wrp #content{
+  width: 1260px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+}
+
+#wrp #content #cleft{
+width: 420px;
+height: 300px;
+float: left;
+text-align: center;
+}
+
+#wrp #content #cleft ul li a:link,#wrp #content #cleft ul li a:visited{
+width: 200px;
+height: 40px;
+font-size: large;
+font-weight: bolder;
+background-color: white;
+color: gray;
+display: block;
+text-decoration: none;
+margin-bottom: auto;
+margin-left: 70px;
+text-align: center;
+line-height: 50px;
+}
+
+#wrp #content #cleft ul li a:hover{
+background-color: gray;
+color: rgb(255, 255, 255);
+}
+
+#wrp #content #cright{
+width: 836px;
+height: 500px;
+background-color: rgb(255, 255, 255);
+float: right;
+border-left:solid #d5f5fa 2px;
+border-right:solid #d5f5fa 2px;
+}
+
+#wrp #footer{
+  width: 1260px;
+  height: 300px;
+  background-color: beige;
+  clear: both;
+}
+
+#wrp #footer #fleft{
+width: 500px;
+height: 300px;
+background-color: rgb(255, 255, 255);
+float: left;
+}
+
+#wrp #footer #fleft #fup {
+width: 250px;
+height: 80px;
+background-color: rgb(24, 248, 27);
+float: left;
+background-image: url(../images/SW.png);
+margin-left: 50px;
+}
+
+#wrp #footer #fleft #fdown {
+width: 500px;
+height: 220px;
+float: left;
+margin-left: 50px;
+}
+
+#wrp #footer #fright{
+width: 760px;
+height: 300px;
+float: left;
+background-color: rgb(255, 255, 255);
+}
+
+#wrp #footer #fright #fus{
+width: 760px;
+height: 300px;
+float: left;
+background-color: rgb(255, 255, 255);
+}
+
+/* 媒體查詢 - 小尺寸螢幕 */
+@media (max-width: 768px) {
+  #wrp {
+    width: 100%; /* 使容器寬度自動調整以填滿螢幕 */
+  }
+
+  #header {
+    width: 100%; /* 使標頭容器寬度自動調整以填滿螢幕 */
+    height: auto; /* 高度自動調整 */
+  }
+
+  #header #hleft a {
+    width: 100%; /* 使左側連結容器寬度自動調整以填滿標頭 */
+  }
+
+  #header #hright {
+    width: 100%; /* 使右側容器寬度自動調整以填滿標頭 */
+  }
+
+  /* 調整其他元素的樣式，以使其在小螢幕上呈現得更好 */
+}
+
+/* 媒體查詢 - 中等尺寸螢幕 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #wrp {
+    width: 90%; /* 使容器寬度自動調整以填滿螢幕的90% */
+  }
+
+  #header {
+    width: 90%; /* 使標頭容器寬度自動調整以填滿螢幕的90% */
+  }
+
+  #header #hleft a {
+    width: 100%; /* 使左側連結容器寬度自動調整以填滿標頭 */
+  }
+
+  #header #hright {
+    width: 100%; /* 使右側容器寬度自動調整以填滿標頭 */
+  }
+
+  /* 調整其他元素的樣式，以使其在中等尺寸螢幕上呈現得更好 */
+}
+
+/* 媒體查詢 - 大尺寸螢幕 */
+@media (min-width: 1025px) {
+  #wrp {
+    width: 80%; /* 使容器寬度自動調整以填滿螢幕的80% */
+  }
+
+  #header {
+    width: 80%; /* 使標頭容器寬度自動調整以填滿螢幕的80% */
+  }
+
+  #header #hleft a {
+    width: 275px; /* 恢復左側連結容器寬度為275px */
+  }
+
+  #header #hright {
+    width: 80%; /* 使右側容器寬度自動調整以填滿標頭 */
+  }
+
+  /* 調整其他元素的樣式，以使其在大尺寸螢幕上呈現得更好 */
+}
